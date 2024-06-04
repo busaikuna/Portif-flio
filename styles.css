@@ -1,0 +1,174 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+header{
+    z-index: 5;
+    color: #fff;
+    position: fixed;
+    background-color: #0000009c;
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 15vh;
+}
+.logo{
+    width: 15vw;
+    margin-left: 5vw;
+}
+.person{
+    transition: all 1s;
+    border-radius: 15px;
+    border: 1px solid #ff0000b2;
+    box-shadow: 5px 5px 50px 15px #000;
+    width: 25vw;
+    background-color: #0000008f;
+    backdrop-filter: blur(8px);
+}
+.person:hover{
+    width: 30vw;
+    box-shadow: 5px 5px 50px 5px #ff000081;
+}
+.text{
+    background-color: #0000000c;
+    backdrop-filter: blur(2px);
+    padding: 50px;
+    border-radius: 15px;
+    width: 40vw;
+}
+.text h1{
+    font-size: 2.5rem;
+}
+.styleSpan{
+    animation: Colorspan 10s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes Colorspan {
+    0%{
+        color: #f00;
+    text-shadow: 0 0 5px #000;
+    }
+    50%{
+        color: #fff;
+    text-shadow: 0 0 5px #f00;
+
+    }
+    100%{
+    color: #000;
+    text-shadow: 0 0 5px #f00;
+    }
+}
+
+.divBtn{
+    margin-left: auto;
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.btnLink{
+    font-size: 1.3vw;
+    cursor: pointer;
+    background: none;
+    border: #f00 1px  solid;
+    color: #fff;
+    width: 10vw;
+    height: 6vh;
+    transition: all 1s;
+}
+.btnLink:hover{
+    background-color: #fd000052;
+    border: #fff 1px  solid;
+    backdrop-filter: blur(30px);
+    font-size: 1rem;
+    width: 15vw;
+    height: 6vh;
+}
+
+.introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    height: 90vh;
+    width: 100vw;
+    background-image: url("imgs/main-background.jpg");
+    background-size: cover;
+}
+.divProjects{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projectText{
+    text-align: center;
+    width: 70vw;
+}
+.project{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.textProject{
+    width: 30vw;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}

@@ -1,7 +1,20 @@
-document.addEventListener("scroll", ()=>{
-    if (document.documentElement.scrollTop > 220){
-              
-    }
+let btnProjects = document.querySelector("#projects")
+let btnAboutMe = document.querySelector("#aboutMe")
+
+btnProjects.addEventListener("click", ()=>{
+    window.scroll({
+        top: 800,
+        left: 0,
+        behavior: 'smooth'
+      });
+})
+
+btnAboutMe.addEventListener("click", ()=>{
+    window.scroll({
+        top: 1289,
+        left: 0,
+        behavior: 'smooth'
+      });
 })
 
 let currentIndex = 0;

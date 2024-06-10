@@ -5,12 +5,14 @@
     margin: 0;
     padding: 0;
     font-family: "Outfit", sans-serif;
+    overflow-x: hidden;
 }
 body{
     background-color: #000;
     color: #fff;
 }
 header{
+    overflow: hidden;
     z-index: 5;
     color: #fff;
     position: fixed;
@@ -22,10 +24,12 @@ header{
     height: 15vh;
 }
 .logo{
-    width: 15vw;
+    user-select: none;
+    width: 20vw;
     margin-left: 5vw;
 }
 .person{
+    user-select: none;
     transition: all 1s;
     border-radius: 15px;
     border: 1px solid #ff0000b2;
@@ -108,6 +112,8 @@ header{
     background-size: cover;
 }
 .divProjects{
+    padding-top: 5vw;
+    background-size: cover;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -119,56 +125,78 @@ header{
     width: 70vw;
 }
 .project{
+    gap: 2vw;
+    margin-top: 5vw;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
 }
 .textProject{
-    width: 30vw;
+    width: 35vw;
+}
+.projects-images{
+    width: fit-content;
+}
+.imgProject{
+    user-select: none;
+    width: 50vw;
+    border-radius: 15px;
+    border: 1px solid #ff0000b2;
 }
 
-.carousel {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
-.carousel-inner {
+@media(max-width: 720px){
+    .logo{
+        width: 30vw;
+        margin-left: 5vw;
+    }
+    .divBtn{
+        margin-left: auto;
+        padding: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .btnLink{
+        font-size: 2vw;
+        cursor: pointer;
+        background: none;
+        border: #f00 1px  solid;
+        color: #fff;
+        width: 13vw;
+        height: 6vh;
+        transition: all 1s;
+    }
+    .person{
+        transition: all 1s;
+        border-radius: 15px;
+        border: 1px solid #ff0000b2;
+        box-shadow: 5px 5px 50px 15px #000;
+        width: 30vw;
+        background-color: #0000008f;
+        backdrop-filter: blur(8px);
+        margin-left: 5vw;
+    }
+    .person:hover{
+        width: 30vw;
+        box-shadow: 5px 5px 50px 5px #ff000081;
+    }
+}
+.aboutMe{
+    margin-top: 5vw;
+    width: 100VW;
+    font-size: 1.5rem;
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-.carousel-item {
-    min-width: 100%;
-    box-sizing: border-box;
+.aboutMe p {
+    width: 80vw;
+    text-align: justify;
 }
-
-.carousel-item img {
-    width: 100%;
-    display: block;
-}
-
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.carousel-control.prev {
-    left: 10px;
-}
-
-.carousel-control.next {
-    right: 10px;
+.aboutMe h1 {
+    text-align: center;
 }

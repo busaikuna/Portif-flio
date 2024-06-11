@@ -1,0 +1,91 @@
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    height: 90vh;
+    width: 100vw;
+    background-image: url("../../imgs/main-background.jpg");
+    background-size: cover;
+}
+
+.text {
+    background-color: #0000000c;
+    backdrop-filter: blur(2px);
+    padding: 50px;
+    border-radius: 15px;
+    width: 40vw;
+}
+
+.text h1 {
+    font-size: 2.5rem;
+}
+
+.divProjects {
+    padding-top: 5vw;
+    background-size: cover;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projectText {
+    text-align: center;
+    width: 70vw;
+}
+
+.project {
+    gap: 2vw;
+    margin-top: 5vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textProject {
+    width: 35vw;
+}
+
+.projects-images {
+    width: fit-content;
+}
+
+.imgProject {
+    user-select: none;
+    width: 50vw;
+    border-radius: 15px;
+    border: 1px solid #ff0000b2;
+}
+
+.aboutMe {
+    margin-top: 5vw;
+    width: 100VW;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe p {
+    width: 80vw;
+    text-align: justify;
+}
+
+.aboutMe h1 {
+    text-align: center;
+}
+
+@media(max-width: 720px) {
+    .person {
+        width: 30vw;
+        margin-left: 5vw;
+    }
+}
+
+

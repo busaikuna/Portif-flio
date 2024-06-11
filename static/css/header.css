@@ -1,0 +1,73 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    overflow: hidden;
+    z-index: 5;
+    color: #fff;
+    position: fixed;
+    background-color: #0000009c;
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 8vh;
+}
+
+.logo {
+    user-select: none;
+    width: 10vw;
+    margin-left: 5vw;
+}
+
+.divBtn {
+    margin-left: auto;
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.btnLink {
+    font-size: 1vw;
+    cursor: pointer;
+    background: none;
+    border: #f00 1px solid;
+    color: #fff;
+    width: 7vw;
+    height: 5vh;
+    transition: all 1s;
+}
+
+@media(max-width: 720px) {
+    .logo {
+        width: 30vw;
+        margin-left: 5vw;
+    }
+    .divBtn {
+        margin-left: auto;
+        padding: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .btnLink {
+        font-size: 2vw;
+        width: 13vw;
+        height: 6vh;
+    }
+}

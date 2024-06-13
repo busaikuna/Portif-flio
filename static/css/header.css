@@ -52,22 +52,4 @@ header {
     transition: all 1s;
 }
 
-@media(max-width: 720px) {
-    .logo {
-        width: 30vw;
-        margin-left: 5vw;
-    }
-    .divBtn {
-        margin-left: auto;
-        padding: 5vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-    .btnLink {
-        font-size: 2vw;
-        width: 13vw;
-        height: 6vh;
-    }
-}
+

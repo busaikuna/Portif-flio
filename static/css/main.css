@@ -81,11 +81,3 @@
     text-align: center;
 }
 
-@media(max-width: 720px) {
-    .person {
-        width: 30vw;
-        margin-left: 5vw;
-    }
-}
-
-

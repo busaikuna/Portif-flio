@@ -1,0 +1,20 @@
+.person:hover {
+    width: 30vw;
+    box-shadow: 5px 5px 50px 5px #ff000081;
+}
+
+.btnLink:hover {
+    background-color: #fd000052;
+    border: #fff 1px solid;
+    backdrop-filter: blur(30px);
+    font-size: 1rem;
+    width: 10vw;
+    height: 5vh;
+}
+
+@media(max-width: 720px) {
+    .person:hover {
+        width: 30vw;
+        box-shadow: 5px 5px 50px 5px #ff000081;
+    }
+}

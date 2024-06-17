@@ -1,0 +1,79 @@
+@media (max-width: 768px){
+
+    /*HEADER*/
+    .logo {
+        width: 30vw;
+        margin-left: 5vw;
+    }
+    .divBtn {
+        margin-left: auto;
+        padding: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    .btnLink {
+        font-size: 2vw;
+        width: 15vw;
+        height: 7vW;
+    }
+    /*MAIN*/
+
+    .introduction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        height: 90vh;
+        width: 100vw;
+        background-image: url("../../imgs/main-background.jpg");
+        background-size: cover;
+    }
+
+    .text {
+        background-color: #0000000c;
+        backdrop-filter: blur(2px);
+        padding: 50px;
+        border-radius: 15px;
+        width: 80vw;
+    }
+
+    .person{
+        width: 50vw;
+    }
+    
+    .projectText {
+        text-align: center;
+        width: 90vw;
+        font-size: 3vw;
+    }
+    
+    .project {
+        gap: 2vw;
+        margin-top: 5vw;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .textProject {
+        width: 80vw;
+    }
+    
+    .projects-images {
+        width: fit-content;
+    }
+    
+    .imgProject {
+        user-select: none;
+        width: 95vw;
+        border-radius: 15px;
+        border: 1px solid #ff0000b2;
+    }
+}

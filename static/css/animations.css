@@ -1,0 +1,28 @@
+.styleSpan {
+    animation: Colorspan 10s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes Colorspan {
+    0% {
+        color: #f00;
+        text-shadow: 0 0 5px #000;
+    }
+    50% {
+        color: #fff;
+        text-shadow: 0 0 5px #f00;
+    }
+    100% {
+        color: #000;
+        text-shadow: 0 0 5px #f00;
+    }
+}
+
+.person {
+    transition: all 1s;
+    border-radius: 15px;
+    border: 1px solid #ff0000b2;
+    box-shadow: 5px 5px 50px 15px #000;
+    width: 20vw;
+    background-color: #0000008f;
+    backdrop-filter: blur(8px);
+}
